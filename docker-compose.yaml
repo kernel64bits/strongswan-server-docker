@@ -1,0 +1,8 @@
+services:
+  strongswan:
+    build: .
+    cap_add:
+      - CAP_NET_ADMIN
+    ports: 
+      - 500:500/udp
+      - 4500:4500/udp
